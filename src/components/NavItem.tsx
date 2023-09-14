@@ -2,7 +2,7 @@
 import Link, { LinkProps } from "next/link";
 import { usePathname } from "next/navigation";
 import { PropsWithChildren } from "react";
-import { Button, buttonVariants } from "./Button";
+import { Button } from "./Button";
 import { cn } from "@/lib/utils";
 
 interface INavItem extends LinkProps, PropsWithChildren {}

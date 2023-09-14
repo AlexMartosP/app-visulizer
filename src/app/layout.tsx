@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import NavItem from "@/components/NavItem";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import URLBar from "@/components/URLBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,6 +66,9 @@ export default function RootLayout({
             </NavGroup>
           </div>
           <div className="flex-1 overflow-y-auto p-32">
+            <div className="border p-4 rounded-md">
+              <URLBar />
+            </div>
             <div className="border p-4 rounded-md">{children}</div>
           </div>
         </div>
